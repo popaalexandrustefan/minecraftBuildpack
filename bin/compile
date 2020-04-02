@@ -78,6 +78,7 @@ mv dropbox_uploader.sh $BUILD_DIR/bin
 echo "done"
 
 echo -n "-----> Installing Minecraft ${minecraft_version}... "
+echo -n "minecraft_url = ${minecraft_url}"
 curl -o minecraft.jar -s -L $minecraft_url
 mv minecraft.jar $BUILD_DIR/minecraft.jar
 echo "done"
